@@ -86,7 +86,7 @@ public class Main extends AppCompatActivity {
         CardRecyclerView mRecyclerView = (CardRecyclerView) Main.this.findViewById(R.id.carddemo_recyclerview);
         mRecyclerView.setHasFixedSize(false);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(Main.this));
-
+        
         //Set the empty view
         if (mRecyclerView != null) {
             mRecyclerView.setAdapter(mCardArrayAdapter);

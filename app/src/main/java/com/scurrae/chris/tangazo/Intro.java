@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.PersistableBundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 import com.github.paolorotolo.appintro.AppIntro;
@@ -73,6 +75,11 @@ public class Intro extends AppIntro{
     @Override
     public void onNextPressed() {
         // Do something when users tap on Next button.
+
+    }
+    public void clickme(View view){
+        Intent intent = new Intent (this, Main.class);
+        startActivity(intent);
     }
 
     @Override
